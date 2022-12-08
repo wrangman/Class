@@ -5,7 +5,7 @@ class MyCars():
         self.cars = []
 
     def list_cars(self):
-        print("LISTA:")
+        print("BILLISTA:")
         for i, car in enumerate(self.cars):
             print(f"{i+1}. {car['make']} {car['model']}")
               
@@ -16,18 +16,16 @@ class MyCars():
         del self.cars[index]
         
     def save_to_file(self, filename):
-        cars_json = json.dumps(self.cars)
-
-        f = open(filename, "w")
-        f.write(cars_json)
-
-        # Close the file
-        f.close()
+        with open(filename, 'w') as f:
+            json_string = json.dumps(self.cars)
+            f.write(json_string)
         
-    def load_from_file(self, file_path):
+    def load_from_file(self, filename):
         # Loads the cars from a JSON file
-        with open(file_path, "r") as file:
-            data = json.load(file)
-            return data
-        
+        try:
+            with open(filename, "r") as file:
+                return json.load(file)
+                
+        except FileNotFoundError:
+            return False
     
