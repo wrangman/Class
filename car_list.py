@@ -21,6 +21,7 @@ FAVORITBILAR ---------------------------------------------------
 
 if len(car.cars) > 0: 
     car.list_cars() 
+    
 else: 
     print(bcolors.CYAN + "(Inga sparade bilar hittades)")
 
@@ -54,7 +55,6 @@ while True:
             car.add_car(make, model)
         
     os.system('cls')
-
     print(bcolors.CYAN)
     car.list_cars()
     
