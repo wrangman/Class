@@ -21,11 +21,11 @@ if load_stored_cars:                                #If there are stored cars ad
 os.system('cls')
 
 print(bcolors.YELLOW + """
-FAVORITBILAR ---------------------------------------------------
+FAVORITBILAR ===================================================            
 - Lägg till bil genom att skriva märke och modell med mellanslag
 - Ta bort genom att skriva respektive nummer
 - Spara & avsluta genom att skriva "/q"
-----------------------------------------------------------------""" + bcolors.CYAN)
+================================================================""" + bcolors.CYAN)
 
 if len(car.cars) > 0: 
     car.list_cars() 
