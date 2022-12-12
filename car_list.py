@@ -1,3 +1,11 @@
+'''
+CAR_LIST.PY: Dina favoritbilar :)
+
+__author__  = "Johan Wrangö"
+__version__ = "1.0.0"
+__email__   = "johan.wrango@ntig.se"
+'''
+
 import os
 import time
 from Cars import MyCars
