@@ -23,13 +23,12 @@ class MyCars():
     def remove_car(self, index):
         del self.cars[index]
         
-    def save_to_file(self, filename):
+    def save_to_file(self, filename):                    # Saves to JSON
         with open(filename, 'w') as f:
             json_string = json.dumps(self.cars)
             f.write(json_string)
         
-    def load_from_file(self, filename):
-        # Loads the cars from a JSON file
+    def load_from_file(self, filename):                  # Loads the cars from a JSON file
         try:
             with open(filename, "r") as file:
                 return json.load(file)

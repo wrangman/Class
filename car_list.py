@@ -13,10 +13,10 @@ from bcolors import bcolors
 
 car = MyCars()
 
-load_stored_cars = car.load_from_file("cars.json")
+stored_cars = car.load_from_file("cars.json")  #Load stored cars from file - the function is in Cars.py
 
-if load_stored_cars:                                #If there are stored cars add them
-    car.cars = load_stored_cars    
+if stored_cars:                                #If there are stored cars add them
+    car.cars = stored_cars    
     
 os.system('cls')
 
