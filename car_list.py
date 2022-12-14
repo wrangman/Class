@@ -2,7 +2,7 @@
 CAR_LIST.PY: Dina favoritbilar :)
 
 __author__  = "Johan Wrangö"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __email__   = "johan.wrango@ntig.se"
 '''
 
@@ -50,8 +50,9 @@ while True:
             car.remove_car(int(entry)-1)
         
         else:
-            print(bcolors.RED + f"Bilen finns inte - skriv ett nummer mellan 1 och {total_cars}")
-            time.sleep(1)
+            if total_cars > 0:                           #if no cars - display nothing
+                print(bcolors.RED + f"Bilen finns inte - skriv ett nummer mellan 1 och {total_cars}")
+                time.sleep(1)
     
     else:
         if not " " in entry:
