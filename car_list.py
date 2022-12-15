@@ -25,7 +25,7 @@ print(bcolors.YELLOW + """
 FAVORITBILAR ===================================================            
 - Lägg till bil genom att skriva märke och modell med mellanslag
 - Ta bort genom att skriva respektive nummer
-- Aktivera/deaktivera sorteringsfunktion: /sort
+- Aktivera/deaktivera sorteringsfunktion: "/sort"
 - Spara & avsluta genom att skriva "/q"
 ================================================================""" + bcolors.CYAN)
 
