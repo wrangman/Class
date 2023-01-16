@@ -2,7 +2,7 @@
 CARS.PY: Bilklass
 
 __author__  = "Johan Wrangö"
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 __email__   = "johan.wrango@ntig.se"
 '''
 
