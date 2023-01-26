@@ -3,7 +3,7 @@ class Cars():
         self.cars = []
         
     def add_car(self, name):
-        self.cars.append(name)
+        self.cars.append({ "name": name })
         
     def list_cars(self):
         return self.cars
