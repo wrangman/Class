@@ -1,4 +1,5 @@
 import json
+import os
 
 
 def save_to_file(filename):                       # Saves to JSON
@@ -15,7 +16,7 @@ def load_from_file(filename):                     # Loads the cars from a JSON f
             return False
         
         
-
+os.system('cls')
 loaded_text = load_from_file("test.json")       # loads previous inputs
 print(loaded_text)
 
